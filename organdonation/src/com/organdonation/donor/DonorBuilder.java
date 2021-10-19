@@ -15,8 +15,7 @@ public class DonorBuilder extends ApplicantBuilder implements Applicants,OrganBa
 
 		}
 
-		public DonorBuilder(String firstName, String lastName, String phoneNumber, String organType, String emailId,
-				String address) {
+		public DonorBuilder(String firstName, String lastName, String phoneNumber, String organType, String emailId, String address) {
 			this.firstName = firstName;
 			this.phoneNumber = phoneNumber;
 			this.organType = organType;
