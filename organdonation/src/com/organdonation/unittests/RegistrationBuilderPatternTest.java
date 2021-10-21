@@ -14,12 +14,12 @@ import com.organdonation.recipient.RecipientBuilder;
 
 public class RegistrationBuilderPatternTest {
 	
-	private final String firstName="Micheal";
+	private final String firstName="Jasper";
 	private final String lastName ="Yardy";
 	private final String phoneNumber="123456789";
 	private final String organType="Heart";
-	private final String emailId="my@au.com";
-	private final String address="NewYork";
+	private final String emailId="mycode@au.com";
+	private final String address="Chicago";
 
 	@Test
 	public void TestDonorRegistration() {
