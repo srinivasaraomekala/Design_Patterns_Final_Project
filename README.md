@@ -13,3 +13,5 @@ Bridge --> Refer OrganDonationApplication.java, WHO (abstraction class), DonorOr
            , DonorBuilder and RecipientBuilder.java (as Concrete Implementations)
 
 Java Doc has been implemented and pushed to master branch
+
+Write Up document has pushed to the master.
