@@ -11,4 +11,5 @@ Composite --> Refer OrganDonationApplication.java, Applicants.java (Component), 
 
 Bridge --> Refer OrganDonationApplication.java, WHO (abstraction class), DonorOrganBank & Recipient OrganBank (Refined abstraction), OrganBank (Interface as IMPLEMENTOR)
            , DonorBuilder and RecipientBuilder.java (as Concrete Implementations)
-------------------- In Progress ---------------------------
+
+Java Doc has been implemented and pushed to master branch
