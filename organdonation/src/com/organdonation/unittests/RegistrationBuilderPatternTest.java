@@ -1,5 +1,7 @@
 package com.organdonation.unittests;
 
+
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -13,31 +15,30 @@ import com.organdonation.recipient.RecipientBuilder;
  */
 
 public class RegistrationBuilderPatternTest {
-	
-	private final String firstName="Jasper";
-	private final String lastName ="Yardy";
-	private final String phoneNumber="123456789";
-	private final String organType="Heart";
-	private final String emailId="mycode@au.com";
-	private final String address="Chicago";
+
+	private final String firstName = "Micheal";
+	private final String lastName = "Yardy";
+	private final String phoneNumber = "123456789";
+	private final String organType = "Heart";
+	private final String emailId = "my@au.com";
+	private final String address = "NewYork";
 
 	@Test
 	public void TestDonorRegistration() {
 		ApplicantBuilder donor = new DonorBuilder();
-		Applicant recepientDetails =	 donor
-			.submitDetails(firstName, lastName, phoneNumber, organType, emailId, address).build();
-		Assert.assertEquals(this.firstName,recepientDetails.getFirstName());
-		Assert.assertEquals(this.address,recepientDetails.getAddress());
+		Applicant recepientDetails = donor.submitDetails(firstName, lastName, phoneNumber, organType, emailId, address)
+				.build();
+		Assert.assertEquals(this.firstName, recepientDetails.getFirstName());
+		Assert.assertEquals(this.address, recepientDetails.getAddress());
 	}
-	
 
 	@Test
 	public void TestRecipientRegistration() {
 		ApplicantBuilder recipient = new RecipientBuilder();
-		Applicant recepientDetails =	 recipient
-			.submitDetails(firstName, lastName, phoneNumber, organType, emailId, address).build();
-		Assert.assertEquals(this.lastName,recepientDetails.getLastName());
-		Assert.assertEquals(this.phoneNumber,recepientDetails.getPhoneNumber());
+		Applicant recepientDetails = recipient
+				.submitDetails(firstName, lastName, phoneNumber, organType, emailId, address).build();
+		Assert.assertEquals(this.lastName, recepientDetails.getLastName());
+		Assert.assertEquals(this.phoneNumber, recepientDetails.getPhoneNumber());
 	}
 
 }

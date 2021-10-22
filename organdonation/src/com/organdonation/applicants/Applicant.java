@@ -1,5 +1,12 @@
 package com.organdonation.applicants;
 
+/**
+ * Class implementing SingleTon Design Pattern
+ * 
+ * @author Srinivas
+ *
+ */
+
 public class Applicant {
 
 	private String firstName;
@@ -8,27 +15,30 @@ public class Applicant {
 	private String organType;
 	private String emailId;
 	private String address;
-	
-	 private static volatile Applicant obj  = null;
-	 
-	 private Applicant() {}
-	 
-	 public static Applicant getInstance()
-	    {
-	        if (obj == null)
-	        {
-	            synchronized (Applicant.class)
-	            {
-	                if (obj==null)
-	                    obj = new Applicant();
-	            }
-	        }
-	        return obj;
-	    }
 
+	private static volatile Applicant obj = null;
+
+	private Applicant() {
+	}
+
+	public static Applicant getInstance() {
+		if (obj == null) {
+			synchronized (Applicant.class) {
+				if (obj == null)
+					obj = new Applicant();
+			}
+		}
+		return obj;
+	}
+
+	/**
+	 * 
+	 * @return The details of the applicant, who successfully submitted the form
+	 */
 	public String getSubmittedDetails() {
-		return  " FirstName " + this.firstName + " , "+ " LastName " + this.lastName + " , " +" PhoneNumber "
-				+ this.phoneNumber + " , " + " Organ Type " + this.organType + " , " + " Email Id " + this.emailId + " , " + " Address " + this.address;
+		return " FirstName " + this.firstName + " , " + " LastName " + this.lastName + " , " + " PhoneNumber "
+				+ this.phoneNumber + " , " + " Organ Type " + this.organType + " , " + " Email Id " + this.emailId
+				+ " , " + " Address " + this.address;
 
 	}
 

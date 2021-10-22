@@ -113,7 +113,7 @@ public class OrganDonationApplication {
 							break;
 						} else if (repeat.equalsIgnoreCase("No")) {
 							   totalApplicants.getApplicants(); //Composite class method to get child components data
-							System.out.println("Bye !!!");
+							System.out.println("Thank You !!!");
 							System.exit(1);
 						}
 
