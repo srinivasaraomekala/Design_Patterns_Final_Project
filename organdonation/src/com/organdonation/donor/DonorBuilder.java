@@ -5,14 +5,10 @@ import com.organdonation.applicants.ApplicantBuilder;
 import com.organdonation.applicants.Applicants;
 import com.organdonation.organbank.OrganBank;
 
-/**
- * @author Srinivas
- *
- */
 public class DonorBuilder extends ApplicantBuilder implements Applicants, OrganBank {
 
 	private String firstName;
-	private String lastName;
+	private String phoneNumber;
 	private String organType;
 
 	public DonorBuilder() {
@@ -32,7 +28,7 @@ public class DonorBuilder extends ApplicantBuilder implements Applicants, OrganB
 	public DonorBuilder(String firstName, String lastName, String phoneNumber, String organType, String emailId,
 			String address) {
 		this.firstName = firstName;
-		this.lastName = lastName;
+		this.phoneNumber = phoneNumber;
 		this.organType = organType;
 
 	}
@@ -40,7 +36,7 @@ public class DonorBuilder extends ApplicantBuilder implements Applicants, OrganB
 	@Override
 	public void getApplicants() {
 		System.out.println(
-				"Donar " + this.firstName + " , " + this.lastName + " is ready to donate organ : " + this.organType);
+				"Donar " + this.firstName + " , " + this.phoneNumber + " is ready to donate organ : " + this.organType);
 	}
 
 
