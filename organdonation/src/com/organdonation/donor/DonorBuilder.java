@@ -8,7 +8,7 @@ import com.organdonation.organbank.OrganBank;
 public class DonorBuilder extends ApplicantBuilder implements Applicants, OrganBank {
 
 	private String firstName;
-	private String phoneNumber;
+	private String lastName;
 	private String organType;
 
 	public DonorBuilder() {
@@ -28,7 +28,7 @@ public class DonorBuilder extends ApplicantBuilder implements Applicants, OrganB
 	public DonorBuilder(String firstName, String lastName, String phoneNumber, String organType, String emailId,
 			String address) {
 		this.firstName = firstName;
-		this.phoneNumber = phoneNumber;
+		this.lastName = lastName;
 		this.organType = organType;
 
 	}
@@ -36,7 +36,7 @@ public class DonorBuilder extends ApplicantBuilder implements Applicants, OrganB
 	@Override
 	public void getApplicants() {
 		System.out.println(
-				"Donar " + this.firstName + " , " + this.phoneNumber + " is ready to donate organ : " + this.organType);
+				"Donar " + this.firstName + " , " + this.lastName + " is ready to donate organ : " + this.organType);
 	}
 
 
