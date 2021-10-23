@@ -3,6 +3,10 @@ package com.organdonation.applicants;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Srinivas
+ *
+ */
 public class TotalApplicants implements Applicants {
 
 	private List<Applicants> applicantsList = new ArrayList<Applicants>();

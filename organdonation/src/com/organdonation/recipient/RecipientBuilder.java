@@ -29,7 +29,7 @@ public class RecipientBuilder extends ApplicantBuilder implements Applicants, Or
 	public RecipientBuilder(String firstName, String lastName, String phoneNumber, String organType, String emailId,
 			String address) {
 		this.firstName = firstName;
-		this.lastName = lastname;
+		this.lastName = lastName;
 		this.organType = organType;
 	}
 
